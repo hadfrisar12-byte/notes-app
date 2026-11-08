@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Catatan Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <h1>📝 Catatan Saya</h1>
+
+        <!-- Form Tambah Catatan -->
+        <form id="note-form">
+            <input type="text" id="note-title" placeholder="Judul catatan..." required>
+            <textarea id="note-content" placeholder="Tulis isi catatan di sini..." rows="4" required></textarea>
+            <button type="submit" id="add-btn">Tambah Catatan</button>
+        </form>
+
+        <!-- Daftar Catatan yang Tersimpan -->
+        <div id="notes-list" class="notes-grid">
+            <!-- Catatan akan muncul di sini via JavaScript -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
